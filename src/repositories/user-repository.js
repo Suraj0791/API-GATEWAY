@@ -1,9 +1,11 @@
 
-const { PrismaClient ,User} = require('@prisma/client');
+const { PrismaClient } = require('@prisma/client');
 
 const CrudRepository = require('./crud-repository');
 
 const prisma = new PrismaClient();
+const User = prisma.user;
+
 
 
 
